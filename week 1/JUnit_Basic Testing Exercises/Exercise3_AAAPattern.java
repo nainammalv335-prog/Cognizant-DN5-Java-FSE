@@ -1,0 +1,20 @@
+
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+public class Exercise3_AAAPattern {
+
+    @Test
+    void testAddition() {
+
+        // Arrange
+        int a = 10;
+        int b = 20;
+
+        // Act
+        int result = a + b;
+
+        // Assert
+        assertEquals(30, result);
+    }
+}
