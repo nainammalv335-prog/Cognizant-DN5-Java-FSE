@@ -1,0 +1,17 @@
+
+
+| **Feature**             | **JPA**                                               | **Hibernate**                               | **Spring Data JPA**                       |
+| ----------------------- | ----------------------------------------------------- | ------------------------------------------- | ----------------------------------------- |
+| **Definition**          | Java Persistence API (Specification)                  | ORM Framework (Implementation of JPA)       | Spring module built on top of JPA         |
+| **Type**                | Specification                                         | Framework                                   | Spring Framework Module                   |
+| **Developed By**        | Oracle                                                | Red Hat (Hibernate Team)                    | Spring Team                               |
+| **Purpose**             | Defines standards for Object Relational Mapping (ORM) | Implements JPA and provides ORM features    | Simplifies database operations using JPA  |
+| **Dependency**          | Requires an implementation (e.g., Hibernate)          | Can work independently or as a JPA provider | Requires JPA and usually Hibernate        |
+| **Database Operations** | Uses `EntityManager`                                  | Uses `Session`                              | Uses `JpaRepository`                      |
+| **Query Language**      | JPQL                                                  | HQL, JPQL, SQL                              | Repository methods, JPQL, Native SQL      |
+| **Configuration**       | Moderate                                              | Moderate                                    | Easy                                      |
+| **Code Required**       | More                                                  | Moderate                                    | Very Less                                 |
+| **CRUD Operations**     | Manual implementation                                 | Manual implementation                       | Automatically provided by `JpaRepository` |
+| **Ease of Use**         | Moderate                                              | Easy                                        | Very Easy                                 |
+| **Example**             | `entityManager.persist(emp);`                         | `session.save(emp);`                        | `employeeRepository.save(emp);`           |
+
